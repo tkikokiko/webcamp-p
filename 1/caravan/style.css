@@ -1,0 +1,300 @@
+/*ブラウザがそれぞれ持っているCSSをリセットするための記述*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
+header {
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.social i {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header .heading {
+  font-size: 32px;
+}
+
+.nav-list {
+  text-align: center;
+  padding :10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main-visual {
+  width: 100%;
+  height: 300px;
+  /*background-color: orange;*/
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-visual-content {
+  /*width: 350px;*/
+  width: 40%;
+  height: 300px;
+  background-color: rgba( 0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 105px;
+}
+
+.main-visual-text {
+  color: #fff;
+}
+
+.main-visual-name {
+  margin-top: 30px;
+  color: #fff;
+}
+
+
+main {
+  width: 800px;
+  /*height: 1400px;*/
+  /*background-color: green;*/
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.blog {
+  width: 540px;
+  margin-right: 30px;
+  /*height: 1400px;*/
+  /*background-color: limegreen;*/
+}
+
+.blog-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.blog-box {
+  padding-top: 50px;
+}
+
+.blog-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.blog-image {
+  height: 180px;
+}
+
+.blog-text {
+  padding: 25px 0 0 30px;
+  /*padding-top: 25px;*/
+  /*padding-left: 30px;*/
+}
+
+.blog-text-heading {
+  padding-bottom: 15px;
+}
+
+.blog-date {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.category {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.pagination {
+  text-align: center;
+  padding-top: 50px;
+}
+.pagination p {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  color: #fff;
+  background-color: #acabab;
+  border-radius: 3px;
+  line-height: 30px;
+}
+
+.sidebar {
+  width: 230px;
+  /*height: 1400px;*/
+  /*background-color: palegreen;*/
+}
+
+.common-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.sidebar-contents {
+  padding: 50px 0;
+}
+
+.popular-text,
+.categories-text {
+  padding-bottom: 5px;
+  border-bottom:1px solid #f7f7f7;
+  margin-bottom: 5px;
+}
+
+.popular-text:last-child,
+.categories-text:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.instagram .sidebar-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instagram-box {
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.instagram-box:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.instagram-box:nth-child(1) {
+  background-image: url(img/airport.jpg);
+}
+.instagram-box:nth-child(2) {
+  background-image: url(img/japan.jpg);
+}
+.instagram-box:nth-child(3) {
+  background-image: url(img/snow.jpg);
+}
+.instagram-box:nth-child(4) {
+  background-image: url(img/japan2.jpg);
+}
+.instagram-box:nth-child(5) {
+  background-image: url(img/lake.jpg);
+}
+.instagram-box:nth-child(6) {
+  background-image: url(img/road.jpg);
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+
+@media screen and (max-width:425px) {
+  .social  {
+    display: none;
+  }
+  
+  .nav-list-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .main-visual-content {
+    width: 100%;
+  }
+  
+  main {
+    display: block;
+    width: 100%;
+  }
+  
+  .blog {
+    width: 100%;
+  }
+  
+  .blog-box {
+    margin: 10px;
+  }
+  
+  .blog-image {
+    width: 55%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .blog-text {
+    padding-left: 10px;
+  }
+  
+  .blog-text-heading {
+    font-size: 80%;
+  }
+  
+  .category {
+    display: none;
+  }
+  
+    .pagination {
+    padding-top: 20px;
+  }
+    
+  .sidebar {
+  width: 100%;
+  padding: 50px 10px 0 10px;
+  }
+  
+  .instagram-box {
+    width: 145px;
+    height: 145px;
+  }
+  
+  .footer-text{
+    font-size: 12px;
+  }
+
+}
